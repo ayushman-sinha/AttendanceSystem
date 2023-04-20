@@ -125,7 +125,7 @@ const AddStudentView = () => {
                 value={status}
                 onChange={(e) => setStatus(e.target.value)}
               >
-                {["Hostel", "Outside", "Home"].map((x) => (
+                {["Present", "Past"].map((x) => (
                   <option key={x + 1} value={x + 1}>
                     {x}
                   </option>
@@ -169,19 +169,19 @@ const AddStudentView = () => {
               ></Form.Control>
             </Form.Group>
             <Form.Group controlId="roomNo">
-              <Form.Label>Room No</Form.Label>
+              <Form.Label>USN</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Room no"
+                placeholder="Enter USN.."
                 value={roomNo}
                 onChange={(e) => setRoomNo(e.target.value)}
               ></Form.Control>
             </Form.Group>
             <Form.Group controlId="b">
-              <Form.Label>Block Number</Form.Label>
+              <Form.Label>Branch </Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Block Number"
+                placeholder="Enter Branch.."
                 value={blockNo}
                 onChange={(e) => setBlockNo(e.target.value)}
               ></Form.Control>
@@ -196,10 +196,10 @@ const AddStudentView = () => {
               ></Form.Control>
             </Form.Group>
             <Form.Group controlId="category">
-              <Form.Label>Category</Form.Label>
+              <Form.Label>Class</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Stream"
+                placeholder="Enter Class.."
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
               ></Form.Control>
