@@ -5,6 +5,7 @@ import { getStudentsByRoomNo as action } from "../actions/studentActions";
 import AttendanceTable from "../components/attendanceTable";
 
 const AttendanceView = () => {
+  
   const [roomNo, setRoomNo] = useState("");
   const dispatch = useDispatch();
   useEffect(() => {}, [dispatch]);
@@ -18,7 +19,8 @@ const AttendanceView = () => {
   };
   return (
     <>
-      <h2>Take Attendance</h2>
+      Bad Gateway
+      {/* <h2>Take Attendance</h2>
       <Form onSubmit={submitHandler} inline>
         <Form.Control
           type="text"
@@ -32,7 +34,7 @@ const AttendanceView = () => {
           Get Students
         </Button>
       </Form>
-      <AttendanceTable roomNo={roomNo} />
+      <AttendanceTable roomNo={roomNo} /> */}
     </>
   );
 };
