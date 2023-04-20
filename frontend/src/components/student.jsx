@@ -15,10 +15,10 @@ const Student = ({ stuentDetails: student }) => {
         </Link>
 
         <Row>
-          <Col>Room No: {student.roomNo}</Col>
+          <Col>USN : {student.roomNo}</Col>
         </Row>
         <Row>
-          <Col>Stream: {student.category}</Col>
+          <Col>Branch: {student.category}</Col>
         </Row>
         <Card.Text>
           Contact:

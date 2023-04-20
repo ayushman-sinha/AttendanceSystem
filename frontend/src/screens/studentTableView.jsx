@@ -28,11 +28,11 @@ const StudentsTableView = ({ keyword, pageNumber }) => {
           <Table striped bordered hover responsive className="table-sm">
             <thead>
               <tr>
-                <th>Stream</th>
+                <th>Branch</th>
                 <th>NAME</th>
                 <th>STATUS</th>
                 <th>CONTACT</th>
-                <th>ROOM NO</th>
+                <th>USN</th>
                 <th>CITY</th>
               </tr>
             </thead>

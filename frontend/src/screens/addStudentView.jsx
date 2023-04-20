@@ -125,7 +125,7 @@ const AddStudentView = () => {
                 value={status}
                 onChange={(e) => setStatus(e.target.value)}
               >
-                {["Present", "Past"].map((x) => (
+                {["Present", "Absent"].map((x) => (
                   <option key={x + 1} value={x + 1}>
                     {x}
                   </option>

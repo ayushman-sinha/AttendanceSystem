@@ -15,7 +15,7 @@ const AnalysisComponent = () => {
       setHeaders([
         { label: "Name", key: "name" },
         { label: "Contact", key: "contact" },
-        { label: "Room No", key: "roomNo" },
+        { label: "USN ", key: "roomNo" },
         { label: "Status", key: "attendance" },
       ]);
       var csvMapList = [];
@@ -23,7 +23,7 @@ const AnalysisComponent = () => {
         var csvMap = {};
         csvMap["name"] = student[1].name;
         csvMap["contact"] = student[1].contact;
-        csvMap["roomNo"] = student[1].roomNo;
+        csvMap["USN"] = student[1].roomNo;
         csvMap["attendance"] = attendance.data[student[0]];
         csvMapList.push(csvMap);
       });
@@ -45,7 +45,7 @@ const AnalysisComponent = () => {
                   <tr>
                     <th>Name</th>
                     <th>Contact No</th>
-                    <th>Room No</th>
+                    <th>USN</th>
                     <th>Attendance</th>
                   </tr>
                 </thead>

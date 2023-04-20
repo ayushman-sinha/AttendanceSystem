@@ -109,13 +109,13 @@ const StudentDetailsView = ({ match, history }) => {
                   <ListGroup variant="flush">
                     <ListGroup.Item>
                       <Row>
-                        <Col>Room No:</Col>
+                        <Col>USN:</Col>
                         <Col> {student.roomNo}</Col>
                       </Row>
                     </ListGroup.Item>
                     <ListGroup.Item>
                       <Row>
-                        <Col>Block No:</Col>
+                        <Col>Branch:</Col>
                         <Col> {student.blockNo}</Col>
                       </Row>
                     </ListGroup.Item>
@@ -129,7 +129,7 @@ const StudentDetailsView = ({ match, history }) => {
                             value={status}
                             onChange={(e) => setStatus(e.target.value)}
                           >
-                            {["Hostel", "Outside", "Home"].map((x) => (
+                            {["Present", "Absent"].map((x) => (
                               <option key={x} value={x}>
                                 {x}
                               </option>
